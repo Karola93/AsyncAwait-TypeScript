@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 992px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: palegoldenrod;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid black;*/
+    margin-top: 60px;
+}
+
+td {
+    border: 1px solid black;
+    width: 400px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ol {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
